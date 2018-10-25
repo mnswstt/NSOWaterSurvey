@@ -13,7 +13,7 @@ import { ComponentsModule } from '../components/components.module';
 
 import { Geolocation } from '@ionic-native/geolocation';
 import { QRScanner } from '@ionic-native/qr-scanner';
-
+import { NativeGeocoder } from '@ionic-native/native-geocoder';
 
 @NgModule({
   declarations: [
@@ -35,6 +35,7 @@ import { QRScanner } from '@ionic-native/qr-scanner';
     SplashScreen,
     Geolocation,
     QRScanner,
+    NativeGeocoder,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
