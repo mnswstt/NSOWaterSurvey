@@ -11,6 +11,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ComponentsModule } from '../components/components.module';
 
+import { Geolocation } from '@ionic-native/geolocation';
+import { QRScanner } from '@ionic-native/qr-scanner';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,7 @@ import { ComponentsModule } from '../components/components.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    ComponentsModule
+    ComponentsModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -30,6 +33,8 @@ import { ComponentsModule } from '../components/components.module';
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
+    QRScanner,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

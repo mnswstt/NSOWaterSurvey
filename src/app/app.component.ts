@@ -23,6 +23,7 @@ export class MyApp {
     this.pages = [
       // test push
       { title: 'Home', component: HomePage },
+      { title: 'Device', component: "DevicePage" },
       { title: 'Zero', component: "ZeroPage" },
       { title: 'Commercial', component: "CommercialPage" },
       { title: 'Rice', component: "RicePage" },
