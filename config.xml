@@ -88,4 +88,8 @@
         <variable name="UPDATE_METHOD" value="auto" />
     </plugin>
     <engine name="android" spec="7.0.0" />
+    <plugin name="cordova-plugin-geolocation" spec="~4.0.1">
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To get the location" />
+    </plugin>
+    <plugin name="cordova-plugin-qrscanner" spec="~2.6.0" />
 </widget>
